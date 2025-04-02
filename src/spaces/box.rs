@@ -42,7 +42,7 @@ impl Space<Tensor> for Box {
 
     fn sample<T>(&self, mask: Option<T>) -> Tensor {
         // Making arrays which classify the coordinates  to interval type
-
+        let a = Tensor::rand(lo, up, s, device)
         todo!()
     }
 
